@@ -259,41 +259,6 @@ else
     rm -r "$HOME/.config/waybar/configs/[TOP] Default_v2" 2>&1 | tee -a "$LOG"
 fi
 
-printf "\n%.0s" {1..2}
-
-# additional wallpapers
-echo "$(tput setaf 6) By default only a few wallpapers are copied...$(tput sgr0)"
-printf "\n%.0s" {1..2}
-
-while true; do
-    read -rp "${CAT} Would you like to download additional wallpapers? (y/n)" WALL
-    case $WALL in
-        [Yy])
-            echo "${NOTE} Downloading additional wallpapers..."
-            if git clone "https://github.com/JaKooLit/Wallpaper-Bank.git"; then
-                echo "${NOTE} Wallpapers downloaded successfully." 2>&1 | tee -a "$LOG"
-
-                if cp -R Wallpaper-Bank/wallpapers/* ~/Pictures/wallpapers/ >> "$LOG" 2>&1; then
-                    echo "${NOTE} Wallpapers copied successfully." 2>&1 | tee -a "$LOG"
-                    rm -rf Wallpaper-Bank 2>&1 # Remove cloned repository after copying wallpapers
-                    break
-                else
-                    echo "${ERROR} Copying wallpapers failed" 2>&1 | tee -a "$LOG"
-                fi
-            else
-                echo "${ERROR} Downloading additional wallpapers failed" 2>&1 | tee -a "$LOG"
-            fi
-            ;;
-        [Nn])
-            echo "You chose not to download additional wallpapers." 2>&1 | tee -a "$LOG"
-            break
-            ;;
-        *)
-            echo "Please enter 'y' or 'n' to proceed."
-            ;;
-    esac
-done
-
 # symlinks for waybar style
 ln -sf "$Waybar_Style" "$HOME/.config/waybar/style.css" && \
 
