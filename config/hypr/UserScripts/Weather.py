@@ -24,12 +24,12 @@ weather_icons = {
 # to get your own location_id, go to https://weather.com & search your location.
 # once you choose your location, you can see the location_id in the URL(64 chars long hex string)
 # like this: https://weather.com/en-PH/weather/today/l/bca47d1099e762a012b9a139c36f30a0b1e647f69c0c4ac28b537e7ae9c1c200
-location_id = "bca47d1099e762a012b9a139c36f30a0b1e647f69c0c4ac28b537e7ae9c1c200"  # TODO
+location_id = "433647a310749c7704f95a4a1b46eb988f16d49027323b567f9b047a6e396cef"  # TODO
 
 # NOTE to change to deg F, change the URL to your preffered location after weather.com
 # Default is English-Philippines with Busan, South Korea as location_id
 # get html page
-url = "https://weather.com/en-PH/weather/today/l/" + location_id
+url = "https://weather.com/en-US/weather/today/l/" + location_id
 html_data = PyQuery(url=url)
 
 # current temperature
