@@ -4,7 +4,7 @@
 clear
 
 wallpaper=$HOME/Pictures/wallpapers/Lofi-Urban-Nightscape.png
-Waybar_Style="$HOME/.config/waybar/style/[Pywal] Chroma Tally.css"
+Waybar_Style="$HOME/.config/waybar/style/Catppuccin-Mocha.css"
 
 # Check if running as root. If root, script will exit
 if [[ $EUID -eq 0 ]]; then
