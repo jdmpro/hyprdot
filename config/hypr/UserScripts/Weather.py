@@ -29,7 +29,7 @@ location_id = "433647a310749c7704f95a4a1b46eb988f16d49027323b567f9b047a6e396cef"
 # NOTE to change to deg F, change the URL to your preffered location after weather.com
 # Default is English-Philippines with Busan, South Korea as location_id
 # get html page
-url = "https://weather.com/en-US/weather/today/l/" + location_id
+url = "https://weather.com/weather/today/l/" + location_id
 html_data = PyQuery(url=url)
 
 # current temperature
