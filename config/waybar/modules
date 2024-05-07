@@ -614,7 +614,8 @@
     "exec": "python ~/.config/hypr/UserScripts/Weather.py",
     //"exec-if": "ping -c 1 wttr.in",
     "tooltip" : true,
-    "on-click-right": "xdg-open https://weather.com/weather/hourbyhour/l/433647a310749c7704f95a4a1b46eb988f16d49027323b567f9b047a6e396cef",
+    "on-click-right": "brave-beta --app=https://weather.com/weather/hourbyhour/l/433647a310749c7704f95a4a1b46eb988f16d49027323b567f9b047a6e396cef",
+    //"on-click-right": "xdg-open https://weather.com/weather/hourbyhour/l/433647a310749c7704f95a4a1b46eb988f16d49027323b567f9b047a6e396cef",
 },
   
   
