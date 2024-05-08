@@ -322,15 +322,6 @@
 	color: @text-color
 }
 
-.widget-backlight {
-    background: @noti-bg-alt;
-    padding: 5px;
-    margin: 10px 10px 5px 10px;
-    border-radius: 10px;
-    font-size: x-large;
-    color: @text-color
-}
-
 .low {
   background: @text-color;
   padding: 0px;
