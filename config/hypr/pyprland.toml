@@ -10,3 +10,9 @@ animation = "fromTop"
 command = "kitty --class kitty-dropterm"
 class = "kitty-dropterm"
 size = "75% 60%"
+
+[scratchpads.files]
+animation = "fromTop"
+command = "thunar --class thunar-dropfiles"
+class = "thunar-dropfiles"
+size = "75% 60%"
